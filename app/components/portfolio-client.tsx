@@ -142,7 +142,7 @@ export default function PortfolioClient({ pinnedRepos }: PortfolioClientProps) {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-zinc-400">Olá, eu sou</p>
-            <h1 className="text-5xl font-bold font-mono">Bruno Henrique Vigo</h1>
+            <h1 className="text-5xl font-bold">Bruno Henrique Vigo</h1>
             <h2 className="text-2xl text-zinc-300">Desenvolvedor Full Stack</h2>
             <p className="text-zinc-400 max-w-md">
               Apaixonado por criar interfaces modernas e soluções digitais inovadoras que proporcionam experiências
@@ -206,7 +206,7 @@ export default function PortfolioClient({ pinnedRepos }: PortfolioClientProps) {
       >
         <div className="max-w-7xl mx-auto space-y-12">
           <div className="text-center space-y-2">
-            <h2 className="text-3xl font-bold font-mono">Minhas Habilidades</h2>
+            <h2 className="text-3xl font-bold mb-2">Minhas Habilidades</h2>
             <p className="text-zinc-400">Tecnologias com as quais trabalho</p>
             <div className="h-1 w-16 bg-blue-600 mx-auto"></div>
           </div>
@@ -366,7 +366,7 @@ export default function PortfolioClient({ pinnedRepos }: PortfolioClientProps) {
         className={`py-20 px-6 bg-zinc-900/30 ${isLoaded ? "animate-slideUp animation-delay-600" : "opacity-0"}`}
       >
         <div className="max-w-3xl mx-auto space-y-8 text-center">
-          <h2 className="text-3xl font-bold font-mono">Vamos conversar?</h2>
+          <h2 className="text-3xl font-bold mb-2">Vamos conversar?</h2>
           <p className="text-zinc-400">
             Estou sempre aberto a novas oportunidades e colaborações. Se você tem um projeto em mente ou apenas quer
             trocar uma ideia, entre em contato!

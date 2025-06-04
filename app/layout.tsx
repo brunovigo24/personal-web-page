@@ -1,21 +1,25 @@
 import type { ReactNode } from "react"
 import "./globals.css"
 import type { Metadata } from "next"
-import { Inter, JetBrains_Mono } from "next/font/google"
+import { Plus_Jakarta_Sans, Lora, Roboto_Mono } from "next/font/google"
 
-const inter = Inter({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-sans",
 })
 
-const jetbrainsMono = JetBrains_Mono({
+const lora = Lora({
+  subsets: ["latin"],
+  variable: "--font-serif",
+})
+
+const robotoMono = Roboto_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
 
 export const metadata: Metadata = {
   title: "Bruno Vigo",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -25,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>{children}</body>
+      <body className={`${plusJakartaSans.variable} ${lora.variable} ${robotoMono.variable} font-sans`}>{children}</body>
     </html>
   )
 }
